@@ -1,0 +1,194 @@
+/* 
+colors used:
+
+*/
+
+
+body{
+    margin:0;
+}
+ul{
+    padding:0;
+ }
+/***************** SideNav Navigation CSS *********************/
+.sidenav>ul>li{
+    list-style: none;
+}
+.sidenav>ul{
+    margin:0;
+}
+#sideNavHeader>h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1rem;
+}
+.sidenav{
+    position:relative;
+    visibility: hidden;
+    position:absolute;
+    width:70%;
+    top:0;
+    left:0;
+    box-shadow: 10px 10px 15px -9px rgba(79,64,64,0.75);
+    height:100vh;
+    background: #1E1F25;
+    color:white;
+    /* border-radius: 1rem; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+#sideMenuHeader{
+    text-align: center;
+    box-sizing: border-box;
+    padding:1rem;
+}
+header>nav{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.ham-menu{
+    vertical-align: center;
+}
+.ham-menu>i{
+    vertical-align: center;
+    padding:1rem;
+    line-height: normal;
+}
+#backdrop{
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: #1E1F25;
+    opacity: 70%;
+}
+#mainHeader{
+    width: 100%;
+    background:#E2DCD7;
+}
+.sidenav>ul{
+    padding-left:0;
+    width:100%;
+    box-sizing: border-box;
+    text-align:start;
+    margin-top: 0;
+    padding: 1rem;
+}
+.sidenav>ul>li{
+    padding: 1rem .5rem;
+}
+.sidenav>ul>li:hover{
+    background: #323337;
+    border-radius: .3rem;
+}
+.sidenav>ul>li{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+#sideMenuHeader{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
+}
+#sideMenuHeader>i{
+    /* vertical-align: middle; */
+    line-height: normal !important;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+/* .nav-desktop{
+    display: none;
+} */
+.nav-mobile{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+.sidenav-footer{
+    position:absolute;
+    bottom:1rem;
+}
+.sidenav-footer>ul>li{
+    list-style: none;
+    display: inline-block;
+}
+.sidenav-footer>ul>li>a{
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.sidenav-footer>ul{
+    margin-top: 1.5rem;
+}
+.sidenav-footer>p{
+    padding:.5rem 0;
+    margin-left: 1rem;
+    border-bottom: 3px solid white;
+    border-radius: 2px;
+}
+.nav-desktop>h1{ 
+    font-family: 'Abril Fatface', cursive;
+    margin:0 !important;
+    line-height:50px;
+    /* text-align: center; */
+    height:50px;
+}
+#sideMenuHeader>h1{
+    margin:0 !important;
+    line-height:50px;
+    /* text-align: center; */
+    height:50px;
+}
+/* h1{
+    clip: rect(0 0 0 0); 
+clip-path: inset(50%);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap; 
+width: 1px;
+} */
+/* h1{
+    display:none;
+} */
+/************************* Main Page Header ******************/
+@media only screen and (min-width: 800px) {
+    #mainHeader>h1{
+        font-family: 'Abril Fatface', cursive;
+        font-size: 3rem;
+        margin:0 !important; 
+        text-align: center !important;
+        padding: 1rem;  
+    }
+    .nav-desktop>ul>li{
+        list-style:none;
+        display: inline-block;
+    }
+    .ham-menu{
+        display: none;
+        /* visibility: 
+        hidden; */
+    }
+    header>nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-desktop>ul>li>a{
+        color:black;
+        font-size: 1rem;
+    }
+    #sideMenuHeader>h1{
+        display: none;
+    }
+    /***************** Footer starts **************/
+    #mainFooter{
+        height:300px;
+        position:fixed;
+        bottom:0vh;
+        background: #E2DCD7;
+        width: 100%;
+    }
+}
