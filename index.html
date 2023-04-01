@@ -24,7 +24,7 @@
             
             <button class="subscribeBtn">Subscribe</button>
             <form action="#" method="get" class="form-input">
-                <input type="search" placeholder="Enter Search Terms" id="search_input">
+                <input type="search" placeholder="Enter Search Terms" class="search_input">
                 <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Go</button>
             </form>
         </div>
@@ -41,7 +41,11 @@
     </header>
     <div id="backdrop"></div>
     <nav class="sidenav">
-        <header id="sideMenuHeader"><h1>Universe</h1><i class="fa-solid fa-xmark xMark" style="color: #e0e0e0;"></i></header>
+        <header id="sideMenuHeader">
+            <div><img src="./images/icon-universe-white.svg" width="90%" alt="white-icon-universe"></div>
+            <div><h1>Universe</h1></div>
+            <div><i class="fa-solid fa-xmark xMark" style="color: #e0e0e0; margin:0;"></i></div>
+            </header>
         <ul>
             <li><i class="fa-solid fa-house" style="color: #3E75B8;"></i><a>Home</a></li>
             <li><i class="fa-solid fa-newspaper" style="color: #4AD07C;"></i><a>Article</a></li>
@@ -64,27 +68,28 @@
         </section>
         <section>
             <form class="footer-form">
-                <input type="search" placeholder="Your Email" id="search_input">
+                <input type="search" placeholder="Your Email" class="search_input">
                 <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
             </form>
         </section>
         <section class="services">
             <ul>
+                <h3>Menu</h3>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Article</a></li>
                 <li><a href="#">Sources</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Article</a></li>
-                <li><a href="#">Sources</a></li>
-                <li><a href="#">Contact</a></li>
+                <h3>About</h3>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Careers</a></li>
+                <!-- <li><a href="#">Sources</a></li>
+                <li><a href="#">Contact</a></li> -->
             </ul>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Article</a></li>
-                <li><a href="#">Sources</a></li>
+                <h3>Support</h3>
+                <li><a href="#">Support Request</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </section>
