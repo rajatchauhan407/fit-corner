@@ -1,4 +1,6 @@
-
+/* 
+color:#F01616;
+*/
 body{
     margin:0;
 }
@@ -24,7 +26,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Outfit', sans-serif;
     font-size: 1rem;
 }
 #sideNavHeader>i{
@@ -140,7 +142,7 @@ a{
     border-radius: 2px;
 }
 .nav-desktop>h1{ 
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Outfit', sans-serif;
     margin:0 !important;
     line-height:50px;
     height:50px;
@@ -186,11 +188,13 @@ width: 1px;
         padding-left: .5rem;
     }
     #mainHeading{
-        font-family: 'Abril Fatface', cursive;
+        font-family: 'Outfit', sans-serif;
+        font-style: italic;
         font-size: 3rem;
         margin:0 !important; 
         /* text-align: center !important; */
         padding: 1rem;  
+        color:#F01616;
     }
     .nav-desktop>ul>li{
         list-style:none;
@@ -207,6 +211,8 @@ width: 1px;
     header>nav{
         display: grid;
         grid-template-columns: 1fr;
+        position:sticky;
+        top:0vh;
     }
     .desktop_menu{
         width: 100%;
@@ -225,11 +231,11 @@ width: 1px;
         margin:0 2rem;
         cursor:pointer;
     }
-    .desktop_menu>li:hover{
-        border-bottom: .4rem solid black;
+    .desktop_menu>li>a:hover{
+        border-bottom: .4rem solid #F01616;
     }
     .desktop_menu>li>a{
-        color:black;
+        color:#F01616;
         /* padding: 0.3rem 2rem; */
         /* padding:1rem; */
     }
@@ -246,8 +252,8 @@ width: 1px;
         grid-template-columns: .8fr 2fr;
         column-gap: 1rem;
         /* height:300px; */
-        position:fixed;
-        bottom:0vh;
+        /* position:fixed; */
+        /* bottom:0vh; */
         background: #E2DCD7;
         width: 100%;
         visibility: visible !important;
@@ -277,7 +283,7 @@ width: 1px;
     .subscribeBtn{
         width:90%;
         margin:auto;
-        background: black;
+        background: #F01616;
         color:white;
         font-size: 1rem;
         text-align: center;
@@ -353,7 +359,7 @@ width: 1px;
         box-sizing: border-box;
         padding:1rem 0;
         margin:0 1rem;
-        border-top: 1px solid black;
+        border-top: 1px solid #F01616;
         white-space: nowrap;
         overflow-x: auto;
     }
@@ -372,5 +378,6 @@ width: 1px;
     }
     h3{
         font-family: 'Nunito', sans-serif;
+        color:#F01616;
     }
 }

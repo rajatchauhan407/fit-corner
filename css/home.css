@@ -1,0 +1,28 @@
+.front-img{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+    width:90%;
+    
+}
+.front-img>div:nth-child(1){
+    background: #E2DCD7;
+}
+.front-img>div:nth-child(2){
+    display: flex;
+    align-items: last baseline;
+    width:100%;
+    height:auto;
+}
+.front-img>div:nth-child(2)>img{
+    width:100%;
+    
+}
+main{
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+}
+h2{
+    font-family: 'Nunito', sans-serif;
+}
