@@ -174,6 +174,11 @@ width: 1px;
 
 /************************* Main Page Header ******************/
 @media only screen and (min-width: 800px) {
+    header{
+        position:sticky;
+        top:0vh;
+        z-index:10;
+    }
     .form-input{
         display: flex;
         padding: 0 .5rem;
@@ -215,6 +220,7 @@ width: 1px;
         top:0vh;
     }
     .desktop_menu{
+        
         width: 100%;
         text-align: center;
         /* padding: 1rem; */

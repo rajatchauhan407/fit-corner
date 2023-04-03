@@ -1,1 +1,7 @@
 https://www.frieze.com/ // videoplayback from here
+font-family:'Nunito', sans-serif;
+ font-family: 'Outfit', sans-serif;
+ font-family: 'Barlow Condensed', sans-serif;
+
+points to be noted for accessibility:
+1. blockquotes to be used for the quotes with the image
