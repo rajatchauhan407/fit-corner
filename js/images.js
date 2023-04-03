@@ -72,6 +72,21 @@ let imagesCollection = [{
     imageDate:''
 },
 {
+    link:'https://pixabay.com/vectors/sports-fitness-silhouette-workout-1975689/?download',
+    name:'Gym Illustration',
+    alt:'gym illustration',
+    websiteOrigin:'https://pixabay.com',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'MCVec',
+    src:'',
+    placement:'',
+    imageDate:''
+},
+{
     link:'',
     name:'',
     alt:'',
