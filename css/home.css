@@ -24,12 +24,12 @@ h4{
 }
 .front-img>div:nth-child(1)>h1{
     font-family:'Nunito', sans-serif;
-    width:90%;
+    width:80%;
 }
 
 .front-img>div:nth-child(1)>h5{
     font-family:'Nunito', sans-serif;
-    width:90%;
+    width:80%;
     color:black;
 }
 .front-img>div:nth-child(2){
