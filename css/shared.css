@@ -310,6 +310,9 @@ width: 1px;
         cursor:pointer;
         height:2rem;
     }
+    .nav-mobile{
+        display: none !important;
+    }
     .header_above{
         display: block;
         display:grid;
