@@ -10,7 +10,6 @@ h4,h2,p{
     grid-template-columns: 1fr 1fr;
     margin: 1rem auto;
     width:80%;
-    
 }
 h4{
     font-family: 'Barlow Condensed', sans-serif;
@@ -22,7 +21,6 @@ h4{
     justify-content: center;
     background: #E2DCD7;
     border-radius: 1rem 0 0 1rem !important;
-
 }
 .front-img>div:nth-child(1)>h1{
     font-family:'Nunito', sans-serif;

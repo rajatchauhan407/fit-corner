@@ -283,6 +283,10 @@ width: 1px;
     #mainHeader>.header_above>h1{
         display: block;
     }
+    .nav-desktop{
+        display:flex;
+        align-items: center;
+    }
     .nav-desktop>h1{
         display: none;
     }
@@ -303,7 +307,7 @@ width: 1px;
     .header_above{
         display: block;
         display:grid;
-        grid-template-columns: 4fr 1fr 1fr;
+        grid-template-columns: 2fr 3fr 1fr;
         grid-gap: 1.5rem;
 
     }
