@@ -10,9 +10,13 @@ function toggleSideNav(){
     if(sideNav.style.visibility === "" || sideNav.style.visibility === "hidden"){
         sideNav.style.visibility = "visible";
         backdrop.style.display = "block";
+        document.body.style.position = 'fixed';
+document.body.style.top = `-${window.scrollY}px`;
     }else{
         sideNav.style.visibility = "hidden";
-        backdrop.style.display = "none"
+        backdrop.style.display = "none";
+        document.body.style.position = '';
+        document.body.style.top = '';
     }
 }
 
