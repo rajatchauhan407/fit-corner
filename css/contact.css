@@ -1,0 +1,15 @@
+.form-container{
+    width:90%;
+    margin:3rem auto;
+}
+.form-top{
+    width:90%;
+    margin:auto;
+}
+.form-container{
+    text-align: center;
+}
+.contact-form{
+ display: grid;
+ grid-template-columns: 1fr;   
+}

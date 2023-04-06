@@ -221,6 +221,126 @@ let imagesCollection = [{
     placement:'',
     imageDate:'Oct 21, 2020'
 },
+{
+    link:'https://www.pexels.com/photo/woman-lifting-barbell-371049/',
+    name:'squat.jpg',
+    alt:'girl-squat',
+    websiteOrigin:'https://www.pexels.com',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'LiSun',
+    src:'',
+    placement:'',
+    imageDate:''
+},
+{
+    link:'https://www.pexels.com/photo/person-holding-barbell-841130/',
+    name:'weight_training.jpg',
+    alt:'weight training',
+    websiteOrigin:'https://www.pexels.com',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'Victor Freitas',
+    src:'',
+    placement:'',
+    imageDate:'Feb 1, 2018'
+},
+{
+    link:'https://www.pexels.com/photo/strong-sportswoman-lifting-barbell-while-working-out-in-gym-5032003/',
+    name:'deadlift.jpg',
+    alt:'deadlift',
+    websiteOrigin:'https://www.pexels.com',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'Ja Valle',
+    src:'',
+    placement:'',
+    imageDate:'Jun 27, 2020'
+},
+{
+    link:'https://www.pexels.com/photo/young-determined-sportswoman-doing-exercise-on-weight-machine-in-modern-sports-club-3768913/',
+    name:'chest_fly',
+    alt:'Chest Fly Pectoral',
+    websiteOrigin:'https://www.pexels.com',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'Andrea Piacquadio',
+    src:'',
+    placement:'',
+    imageDate:''
+},
+{
+    link:'https://www.pexels.com/photo/grayscale-photo-of-a-woman-working-out-9614530/',
+    name:'lats.jpg',
+    alt:'Lats',
+    websiteOrigin:'https://www.pexels.com',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'Bayram Er',
+    src:'',
+    placement:'',
+    imageDate:'Aug 25, 2020'
+},
+{
+    link:'https://www.pexels.com/photo/a-man-doing-a-dumbbell-shoulder-press-7289370/',
+    name:'shoulder.jpg',
+    alt:'Shoulder Press',
+    websiteOrigin:'https://www.pexels.com/',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'Alezia Kozik',
+    src:'',
+    placement:'',
+    imageDate:''
+},
+{
+    link:'https://www.pexels.com/photo/crop-man-working-out-with-weights-in-gym-6550845/',
+    name:'bicep.jpg',
+    alt:'bicep curls',
+    websiteOrigin:'https://www.pexels.com/',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'Andres Ayrton',
+    src:'',
+    placement:'',
+    imageDate:''
+},
+{
+    link:'',
+    name:'',
+    alt:'',
+    websiteOrigin:'',
+    relatedArticle:{
+        text:'',
+        author:'',
+        publishedOn:''
+    },
+    belongsTo:'',
+    src:'',
+    placement:'',
+    imageDate:''
+},
 ];
 
 let headingText = "The universe is everything. It includes all of space, and all the matter and energy that space contains. It even includes time itself and, of course, it includes you.";
