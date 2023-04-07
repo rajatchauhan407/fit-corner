@@ -17,6 +17,11 @@ h4{
     color: #716f6f;
     margin:1rem 0 !important;
 }
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 .front-img>div:nth-child(2){
     display: flex;
     flex-direction: column;
@@ -88,6 +93,9 @@ h4{
 .yoga-card-article{
     margin-top: 1.5rem;
 }
+.yoga-card-article img{
+    width:100%;
+}
 .latest{
     margin-top: 0 !important;
 }
@@ -119,6 +127,9 @@ h4{
     box-sizing: border-box;
     padding: 2rem 0;
     border-bottom: 1px solid #2A2A2A;
+}
+.fitness-article-section-side img{
+    width:100%;
 }
 .fitness-arrow{
     display: block;
@@ -209,6 +220,7 @@ h2{
     z-index:-1;
 }
 .fitness-img>img{
+    width:100%;
     border-radius: .5rem;
 }
 .fitness-arrow{
@@ -287,8 +299,8 @@ h2{
     grid-template-columns: 1fr 1.5fr;
 }
 .workout-container-text{
-    background:#2A2A2A;
-    color:white;
+    background:#E2DCD7;
+    color:rgb(0, 0, 0);
     font-family: 'Barlow Condensed', sans-serif;
     box-sizing: border-box;
     padding:2rem;
@@ -299,9 +311,10 @@ h2{
 }
 .workout-container-img>img{
     border-radius: 1rem;
+    width:100%;
 }
 .workout-container-text>h3{
-    color:white;
+    color:rgb(0, 0, 0);
 }
 .workout-container-text>button{
     cursor:pointer;
@@ -351,6 +364,10 @@ h2{
 }
 .card-latest-image>img{
     border-radius:.5rem;
+    width:100%;
+}
+.advertisement{
+    width:100%;
 }
 .yoga-card{
     display:grid;

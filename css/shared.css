@@ -10,6 +10,11 @@ ul{
  a{
     text-decoration: none;
  }
+ /* setting images */
+
+img{
+    width:100%;
+}
 /***************** SideNav Navigation CSS *********************/
 .sidenav>ul>li{
     list-style: none;
@@ -244,19 +249,19 @@ width: 1px;
     grid-template-columns: 1fr 1fr 1fr;
    
 }
-.services>ul{
+.services ul{
     box-sizing: border-box;
     padding:1rem 0;
-    margin: 0 1rem;
+    margin: 0 0rem;
     /* border-bottom: 1px solid #323337; */
 }
-.services>ul>li>a{
+.services ul li a{
     font-family:'Nunito', sans-serif; ;
     color:#000000;
     text-decoration: none; 
     line-height: 1.8;   
 }
-.services>ul>li{
+.services ul li{
     list-style: none;
 }
 .rights-reserved{
@@ -285,6 +290,7 @@ width: 1px;
 h3{
     font-family: 'Nunito', sans-serif;
     color:#F01616;
+    margin-bottom:0;
 }
 input[type="search"]{
     /* box-shadow: inset 3px 4px 15px 11px rgba(199, 185, 185, 0.3); */
@@ -325,6 +331,13 @@ input[type="search"]{
         padding: 1rem;  
         color:#F01616;
         white-space: nowrap;
+    }
+    .heading img{
+        width:75px;
+        height:100px;
+    }
+    header img{
+        width:90%;
     }
     .nav-desktop>ul>li{
         list-style:none;
@@ -407,6 +420,9 @@ input[type="search"]{
         box-shadow:5px 5px 7px 0px rgba(235, 164, 164, 0.3);
         display: flex;
         align-items: center;
+    }
+    .image-left>img{
+        width:100%;
     }
     .nav-mobile{
         display: none !important;

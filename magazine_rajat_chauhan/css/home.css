@@ -1,0 +1,436 @@
+.front-img{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    width:90%;
+}
+h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+}
+h2{
+    margin:0;
+}
+h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #716f6f;
+    margin:1rem 0 !important;
+}
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.front-img>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E2DCD7;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.front-img>div:nth-child(2)>h1{
+    font-family:'Nunito', sans-serif;
+    width:90%;
+}
+.front-img>div:nth-child(1){
+   
+    margin:auto;
+}
+.front-img>div:nth-child(1)>img{
+    width:100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.heding{
+    width:90%;
+}
+.fitness{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width:100%;
+    margin:auto;
+    z-index:-1;
+}
+.fitness-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    width:90%;
+    margin: auto;
+}
+.fitness-heading h1{
+    padding: .5rem 0;
+}
+.fitness-text>p{
+    padding:0;
+}
+.workout-container-text h4{
+    margin:0;
+}
+.fitness-article-section:last-child{
+    border-bottom:none;
+}
+.fitness-class-button{
+    background: white;
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem;
+    /* background: #F01616; */
+    margin: auto;
+    width: 50%;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 1rem 0;
+    border:2px solid black;
+}
+.yoga-card-article{
+    margin-top: 1.5rem;
+}
+.latest{
+    margin-top: 0 !important;
+}
+.latest>header{
+    margin-bottom: 1rem !important;
+}
+.fitness-class-button-right{
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem;
+    background: #F01616;
+    margin: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 1rem 0;
+    border:none !important;
+}
+.fitness-article-section{
+    border-bottom: 1px solid #2A2A2A;
+    padding-bottom: 1rem;
+}
+.fitness-article-section-side{
+    box-sizing: border-box;
+    padding: 2rem 0;
+    border-bottom: 1px solid #2A2A2A;
+}
+.fitness-arrow{
+    display: block;
+    width:100%;
+    height:.4rem;
+    background:#F01616;
+}
+.fitness-arrow-container{
+    display:flex;
+    align-items: center;
+}
+.workout-section,.yoga, .latest{
+    width:90%;
+    margin:auto;
+}
+.yoga-card-article{
+    border-radius: .5rem;
+    box-shadow:0 1px 3px rgba(0,0,0,.25);
+}
+.yoga-card-article h1{
+    padding: 1rem;
+}
+.yoga-card-article>h3, .yoga-card-article>p{
+    padding:0 1rem;
+    width:90%;
+}
+.card-latest{
+    border-bottom: 1px solid black;
+    padding-top:3rem;
+}
+@media only screen and (min-width: 800px) {
+
+.front-img{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+    width:80%;
+}
+h4{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.front-img>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E2DCD7;
+    border-radius: 0 1rem 1rem 0 !important;
+    margin-top:0;
+}
+.front-img>div:nth-child(2)>h1{
+    font-family:'Nunito', sans-serif;
+    width:80%;
+}
+
+.front-img>div:nth-child(2)>h5{
+    font-family:'Nunito', sans-serif;
+    width:80%;
+    color:black;
+}
+.front-img>div:nth-child(1){
+    display: flex;
+    align-items: last baseline;
+    width:100%;
+    height:auto;
+    
+}
+.front-img>div:nth-child(1)>img{
+    width:100%;
+    border-radius: 1rem 0 0 1rem !important;
+    margin-top:0;
+}
+main{
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+}
+
+
+h2{
+    font-family: 'Nunito', sans-serif;
+}
+.fitness{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    width:90%;
+    margin:auto;
+    z-index:-1;
+}
+.fitness-img>img{
+    border-radius: .5rem;
+}
+.fitness-arrow{
+    display: block;
+    width:100%;
+    height:.4rem;
+    background:#F01616;
+}
+.fitness-heading{
+    display:grid;
+    margin: 1rem 0;
+}
+.fitness-arrow-container{
+    display:flex;
+    align-items: center;
+}
+
+.fitness-heading>h1{
+    font-size: 3.5rem;
+    font-family: 'Outfit', sans-serif;
+}
+.fitness-text{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.fitness-article{
+    width:90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin:auto;
+    column-gap: 3rem;
+}
+.fitness-article-section-side img{
+    border-radius: .5rem;
+}
+.fitness-article-section{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1rem; */
+}
+.fitness-text>h4, .fitness-text>h1{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.fitness-text>h1{
+    font-size: 3rem;
+}
+.fitness-text>h4{
+    
+    padding:1rem 0;
+}
+/* .fitness-text p{
+    padding:1rem 0;
+} */
+.fitness-article-side{
+    display: grid;
+}
+.fitness-article-section-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    margin-bottom: 2.7rem;
+    border-bottom: none;
+    margin-top:0;
+    padding:0 ;
+}
+.fitness-article-section-side h4{
+    margin:0 !important;
+    padding:0;
+}
+.fitness-article-section-side p{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.workout-container{
+    width:90%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.workout-container-text{
+    background:#E2DCD7;
+    color:rgb(0, 0, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+    box-sizing: border-box;
+    padding:2rem;
+    position:relative;
+    width:110%;
+    top:10%;
+    border-radius: 1rem;
+}
+.workout-container-img>img{
+    border-radius: 1rem;
+}
+.workout-container-text>h3{
+    color:rgb(0, 0, 0);
+}
+.workout-container-text>button{
+    cursor:pointer;
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem;
+    background: #F01616;
+    margin: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 1rem 0;
+    border:none !important;
+}
+.yoga-card-article p{
+    margin:0;
+}
+.fitness-article-section{
+    border-bottom:none;
+}
+.card{
+    width:90%;
+    margin: 1rem auto;
+    display:grid;
+    grid-template-columns: 80% 20%;
+    column-gap: 1rem;
+}
+.card-latest-collection{
+    display: grid;
+    row-gap: 3rem;
+}
+.card-latest{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1rem;
+    border-bottom: 1px solid #2A2A2A;
+    padding-bottom:1rem;
+    padding-top:0 !important;
+}
+.card-latest-text h4{
+    margin:0 !important;
+}
+.card-latest-image>img{
+    border-radius:.5rem;
+}
+.yoga-card{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:1rem;
+    width:90%;
+    margin:3rem auto;
+}
+
+.yoga-card-article h1{
+    text-align: center;
+}
+.yoga-card-article h1{
+    margin: 0 auto !important;
+    padding: 1rem 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.yoga-card-article a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding:1rem;
+    background:#F01616;
+    margin:auto;
+    width:30%;
+    border-radius: .5rem;
+    color:white;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+margin: 1rem 0;
+}
+.fitness-class-button{
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+    background: #F01616;
+    margin: auto;
+    width: 50%;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 1rem 0;
+    border:none !important;
+}
+.fitness-class-button-right{
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+    background: #F01616;
+    margin: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 1rem 0;
+    border:none !important;
+}
+.yoga-card-article>h3, .yoga-card-article>p{
+    padding:0 1rem;
+    width:70%;
+}
+.yoga-card-article{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+}
+}
