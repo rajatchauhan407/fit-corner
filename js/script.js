@@ -28,3 +28,12 @@ let xMark = document.querySelector('.xMark');
 xMark.addEventListener('click',()=>{
     toggleSideNav();
 });
+
+(function start(){
+    const links = document.getElementsByClassName('links');
+    for (var i = 0; i < links.length; i++) {
+        if (links[i].href === window.location.href) {
+          links[i].classList.add("active_link");
+        }
+      }
+})();

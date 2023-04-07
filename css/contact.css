@@ -1,6 +1,9 @@
 .form-container{
-    width:90%;
+    width:80%;
     margin:3rem auto;
+}
+img{
+    width:100%;
 }
 .form-container h1{
     margin-bottom: 2rem;
@@ -45,6 +48,7 @@ label{
         margin: 1rem 0;
         /* width:80%; */
     }
+    
     input,textarea{
         outline:1px solid ;
         border-width:0px !important;
@@ -54,20 +58,25 @@ label{
         grid-template-columns: 1.5fr 5fr;
         text-align: center;
     }
-    .feedback{
+    /* .feedback{
         background:#F01616 ;
         /* padding:2rem; */
-        padding: 0 1.3rem 1.3rem 1.3rem;
-    }
-    .f_name,.l_name,.email{
+        /* padding: 0 1.3rem 1.3rem 1.3rem; */
+    /* }  */
+    .f_name,.l_name,.email, .text_area{
         background:#F01616 ;
     }
+    
     .contact-form{
         width:80%;
         margin:auto;
     }
     label{
         color:white;
+    }
+    .form-container{
+        width:60%;
+        margin:3rem auto;
     }
     input{
         height:2rem;

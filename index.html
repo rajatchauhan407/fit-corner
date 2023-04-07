@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@400;500;600;700&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@400;500;600;700&family=Outfit:wght@400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Fit Corner</title>
 </head>
 <body>
     <header id="mainHeader" >
         <nav class="nav-mobile" style="display:flex; align-items: center; background: #E2DCD7;">
-            <a class="ham-menu"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+            <a class="ham-menu"><i class="fa-solid fa-bars fa-xl" aria-label="ham-menu-icon" style="color: #000000;"></i></a>
             <h1>Fit <span style="color:red">Corner</span></h1>
         </nav>
         <div class="header_above">
@@ -29,10 +29,10 @@
             <!-- <button class="subscribeBtn">Subscribe</button> -->
         <nav class="nav-desktop">
             <ul class="desktop_menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/article.html">Article</a></li>
-                <li><a href="./pages/source.html">Sources</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="./index.html" class="links">Home</a></li>
+                <li ><a href="./pages/article.html" class ="links">Article</a></li>
+                <li><a href="./pages/source.html" class="links">Sources</a></li>
+                <li><a href="./pages/contact.html" class="links">Contact</a></li>
             </ul>
         </nav>
             <form action="#" method="get" class="form-input">
@@ -44,24 +44,37 @@
     <div id="backdrop"></div>
     <nav class="sidenav">
         <header id="sideMenuHeader">
-            <div><img src="./images/dumbell.svg"  alt="white-icon-universe"></div>
+            <div><img src="./images/dumbell.svg"  alt="white-icon-universe" aria-label="logo-fit-corner"></div>
             <div style="display:flex;justify-content: start;"><h1> <span style="color: white;">Fit </span><span style="color:#F01616">Corner</span></h1></div>
             <div><i class="fa-solid fa-xmark xMark" style="color: #e0e0e0; margin:0;"></i></div>
         </header>
+        <!-- 
+            ********** Experiment Search Bar in side Nav*********
+            <form action="https://formspree.io/f/xgebpwog" method="POST" class="form-input" >
+            <input type="search" placeholder="Enter Search Terms" class="search_input">
+            <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Go</button>
+        </form> -->
         <ul>
-            <li><i class="fa-solid fa-house" style="color: #3E75B8;"></i><a href="./index.html">Home</a></li>
-            <li><i class="fa-solid fa-newspaper" style="color: #4AD07C;"></i><a href="./pages/article.html">Article</a></li>
-            <li><i class="fa-brands fa-sourcetree" style="color: #7C2F10;"></i><a href="./pages/source.html">Sources</a></li>
-            <li><i class="fa-solid fa-address-book" style="color: #805CBE;"></i><a href="./pages/contact.html">Contact</a></li>
+            <li><i class="fa-solid fa-house" style="color: #3E75B8;" aria-hidden="true"></i><a href="./index.html"  >Home</a></li>
+            <li><i class="fa-solid fa-newspaper" style="color: #4AD07C;" aria-hidden="true"></i><a href="./pages/article.html">Article</a></li>
+            <li><i class="fa-brands fa-sourcetree" style="color: #7C2F10;" aria-hidden="true"></i><a href="./pages/source.html">Sources</a></li>
+            <li><i class="fa-solid fa-address-book" style="color: #805CBE;" aria-hidden="true"></i><a href="./pages/contact.html">Contact</a></li>
         </ul>
-        <footer class="sidenav-footer">
+        
+        <div class="sidenav-footer">
+            <div>
+                <form action="https://formspree.io/f/xgebpwog" method="POST" class="form-input" >
+                    <input type="search" id="search" placeholder="Enter Search Terms" class="search_input" aria-label="search here">
+                    <button type="submit" class="subscribeBtn" style="border-radius: 0 0 0 0;">Go</button>
+            </div>
+            
             <p style="text-align: left;">Follow Us</p>
             <ul>
-                <li><a href="www.facebook.com"><i class="fa-brands fa-google fa-xl" style="color: #d6d6d6;"></i></a></li>
-                <li><a href="www.instagram.com"><i class="fa-brands fa-instagram fa-xl" style="color: #d6d6d6;"></i></a></li>
-                <li><a href="www.twitter.com"><i class="fa-brands fa-facebook fa-xl" style="color: #d6d6d6;"></i></a></li>
+                <li><a href="www.facebook.com"><i class="fa-brands fa-google fa-xl" style="color: #d6d6d6;" aria-label="facebook-link"></i></a></li>
+                <li><a href="www.instagram.com"><i class="fa-brands fa-instagram fa-xl" style="color: #d6d6d6;" aria-label="instagram-link"></i></a></li>
+                <li><a href="www.twitter.com" aria-label="twitter-link"><i class="fa-brands fa-facebook fa-xl" style="color: #d6d6d6;" aria-label="twitter-link"></i></a></li>
             </ul>
-        </footer>
+        </div>
     </nav>
     <main>
         <section class="front-img">
@@ -142,9 +155,9 @@
                     <h3>
                         Squats are necessary legday evil, but this variation is both nasty and effective.
                     </h3>
-                    <button style="width:50%; margin:1.5rem 0" class="fitness-class-button">
+                    <a style="width:50%; margin:1.5rem 0" class="fitness-class-button" href="./pages/article.html">
                         Read Article
-                    </button>
+                    </a>
                 </div>
                 <div class="workout-container-img">
                     <img src="./images/legs.jpg"  alt="lunges">
@@ -154,7 +167,7 @@
         <section class="yoga" style="margin-top:4rem;">
             <header class="fitness">
                 <div class="fitness-heading">
-                    <h2>YOGA</h2>
+                    <h1>YOGA</h1>
                 </div>
                 <div class="fitness-arrow-container">
                     <span class="fitness-arrow"></span>
@@ -162,18 +175,18 @@
             </header>
             <div class="yoga-card">
                 <article class="yoga-card-article">
-                    <h2 >Meditation</h2>
+                    <h1 >Meditation</h1>
                     <div><img src="./images/yoga_workout.jpg" alt="yoga-pose"></div>
                     <h3>Skip the Gym for these Best Yoga Poses</h3>
                     <p>
                         Meditation is a practice that involves training the mind to achieve a state of relaxation, focus, and awareness. It has been practiced for centuries and has been shown to have numerous benefits for mental and physical health, including reducing stress, anxiety, and depression, improving concentration and memory, and enhancing feelings of well-being and happiness.
                     </p>
                     <div style="padding: 0 1rem; width: 100%;box-sizing: border-box;">
-                        <a href="#">View More</a>
+                        <a href="./pages/index.html">View More</a>
                     </div>
                 </article>
                 <article class="yoga-card-article">
-                    <h2 >Stretch</h2>
+                    <h1 >Stretch</h1>
                     <div><img src="./images/yoga_workout2.jpg"  alt="yoga-pose"></div>
                     <h3>Skip the Gym for these Best Yoga Poses</h3>
                     <p>
@@ -181,7 +194,7 @@
                         The deep breathing and relaxation techniques used in yoga can help to reduce stress and anxiety, promoting feelings of calm and well-being.
                     </p>
                     <div style="padding: 0 1rem; width: 100%;box-sizing: border-box;">
-                        <a href="#">View More</a>
+                        <a href="./pages/index.html">View More</a>
                     </div>
                 </article>
             </div>
@@ -189,7 +202,7 @@
         <section class="latest" style="margin-top:3rem;">
             <header class="fitness">
                 <div class="fitness-heading">
-                    <h2>Latest</h2>
+                    <h1>Latest</h1>
                 </div>
                 <div class="fitness-arrow-container">
                     <span class="fitness-arrow"></span>
@@ -233,9 +246,9 @@
             <img src="./images/gym.svg"  alt="launch" style="box-sizing: border-box; padding:.5rem">
         </div>
         <div>
-            <form class="footer-form">
-                <input type="search" placeholder="Your Email" class="search_input">
-                <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
+            <form class="footer-form" method="POST" action="https://formspree.io/f/xgebpwog">
+                <input type="search" placeholder="Your Email" class="search_input" name="email">
+                <button type="submit" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
             </form>
         </div>
         <section class="services">

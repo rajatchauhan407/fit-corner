@@ -1,21 +1,34 @@
 .cards-wrapper{
     width:100%;
 }
+.img{
+    width:100%;
+}
 .sources-table{
     table-layout: fixed;
     width:80%;
-    margin:auto;
+    margin:2rem auto;
 }
 .sources-table td{
     width:30%;
     word-wrap:break-word;
     text-align: center;
     padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+table thead tr th{
+    padding:1rem;
 }
 .sources-table img{
     border-radius: .5rem;
 }
-
+table > caption{
+    font-size: 2rem; 
+    background: #F01616;
+    border-radius:.5rem;
+    font-family: 'Nunito', sans-serif;
+    color:white;
+}
 table a{
     color:black !important;
     font-family: 'Nunito', sans-serif;
