@@ -57,7 +57,7 @@
         <div class="sidenav-footer">
             <div>
                 <form action="https://formspree.io/f/xgebpwog" method="POST" class="form-input" >
-                    <input type="search" id="search" placeholder="Enter Search Terms" class="search_input" aria-label="search here">
+                    <input type="search" id="search" placeholder="Enter Search Terms" class="search_input" name="search_term"  aria-label="search here">
                     <button type="submit" class="subscribeBtn" style="border-radius: 0 0 0 0;">Go</button>
             </div>
             <p style="text-align: left;">Follow Us</p>
@@ -184,10 +184,10 @@
         <img src="../images/gym.svg"  alt="launch" style="box-sizing: border-box; padding:.5rem">
     </div>
     <div>
-        <form class="footer-form" method="POST" action="https://formspree.io/f/xgebpwog">
-            <input type="search" placeholder="Your Email" class="search_input" name="email">
-            <button type="submit" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
-        </form>
+        <div class="footer-form">
+            <input type="text" placeholder="Your Email" class="search_input" name="email">
+            <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
+        </div>
     </div>
     <section class="services">
         <div>
@@ -219,7 +219,7 @@
     </section>
     <div class="rights-reserved">
         <div style="display: flex; align-items: center;">
-            <p>All rights reserved 2023</p>
+            <p style="font-size:1rem !important;">All rights reserved 2023</p>
         </div>
         <div class="footer-icon">
             <ul>
