@@ -10,30 +10,30 @@
     <script src="./js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./images/dumbell.svg">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@400;500;600;700&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito:wght@400;500;600;700&family=Outfit:wght@400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Fit Corner</title>
 </head>
 <body>
     <header id="mainHeader" >
         <nav class="nav-mobile" style="display:flex; align-items: center; background: #E2DCD7;">
-            <a class="ham-menu"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+            <a class="ham-menu"><i class="fa-solid fa-bars fa-xl" aria-label="ham-menu-icon" style="color: #000000;"></i></a>
             <h1>Fit <span style="color:red">Corner</span></h1>
         </nav>
         <div class="header_above">
             <div class="heading">
-                <img src="./images/dumbell.svg" width="75px" height="100
-                px" alt="universe-icon" style="box-sizing: border-box; padding:.5rem">
+                <img src="./images/dumbell.svg"  alt="universe-icon" style="box-sizing: border-box; padding:.5rem">
                 <h1 id="mainHeading"><span style="color:black;">Fit</span> Corner</h1>
             </div>       
             <!-- <button class="subscribeBtn">Subscribe</button> -->
         <nav class="nav-desktop">
             <ul class="desktop_menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/article.html">Article</a></li>
-                <li><a href="./pages/source.html">Sources</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="./index.html" class="links">Home</a></li>
+                <li ><a href="./pages/article.html" class ="links">Article</a></li>
+                <li><a href="./pages/source.html" class="links">Sources</a></li>
+                <li><a href="./pages/contact.html" class="links">Contact</a></li>
             </ul>
         </nav>
             <form action="#" method="get" class="form-input">
@@ -45,24 +45,37 @@
     <div id="backdrop"></div>
     <nav class="sidenav">
         <header id="sideMenuHeader">
-            <div><img src="./images/dumbell.svg" width="90%" alt="white-icon-universe"></div>
+            <div><img src="./images/dumbell.svg"  alt="white-icon-universe" aria-label="logo-fit-corner"></div>
             <div style="display:flex;justify-content: start;"><h1> <span style="color: white;">Fit </span><span style="color:#F01616">Corner</span></h1></div>
             <div><i class="fa-solid fa-xmark xMark" style="color: #e0e0e0; margin:0;"></i></div>
-            </header>
+        </header>
+        <!-- 
+            ********** Experiment Search Bar in side Nav*********
+            <form action="https://formspree.io/f/xgebpwog" method="POST" class="form-input" >
+            <input type="search" placeholder="Enter Search Terms" class="search_input">
+            <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Go</button>
+        </form> -->
         <ul>
-            <li><i class="fa-solid fa-house" style="color: #3E75B8;"></i><a href="./index.html">Home</a></li>
-            <li><i class="fa-solid fa-newspaper" style="color: #4AD07C;"></i><a href="./pages/article.html">Article</a></li>
-            <li><i class="fa-brands fa-sourcetree" style="color: #7C2F10;"></i><a href="./pages/source.html">Sources</a></li>
-            <li><i class="fa-solid fa-address-book" style="color: #805CBE;"></i><a href="./pages/contact.html">Contact</a></li>
+            <li><i class="fa-solid fa-house" style="color: #3E75B8;" aria-hidden="true"></i><a href="./index.html"  >Home</a></li>
+            <li><i class="fa-solid fa-newspaper" style="color: #4AD07C;" aria-hidden="true"></i><a href="./pages/article.html">Article</a></li>
+            <li><i class="fa-brands fa-sourcetree" style="color: #7C2F10;" aria-hidden="true"></i><a href="./pages/source.html">Sources</a></li>
+            <li><i class="fa-solid fa-address-book" style="color: #805CBE;" aria-hidden="true"></i><a href="./pages/contact.html">Contact</a></li>
         </ul>
-        <footer class="sidenav-footer">
+        
+        <div class="sidenav-footer">
+            <div>
+                <form action="https://formspree.io/f/xgebpwog" method="POST" class="form-input" >
+                    <input type="search" id="search" placeholder="Enter Search Terms" class="search_input" name="search_term"  aria-label="search here">
+                    <button type="submit" class="subscribeBtn" style="border-radius: 0 0 0 0;">Go</button>
+            </div>
+            
             <p style="text-align: left;">Follow Us</p>
             <ul>
-                <li><a href="www.facebook.com"><i class="fa-brands fa-google fa-xl" style="color: #d6d6d6;"></i></a></li>
-                <li><a href="www.instagram.com"><i class="fa-brands fa-instagram fa-xl" style="color: #d6d6d6;"></i></a></li>
-                <li><a href="www.twitter.com"><i class="fa-brands fa-facebook fa-xl" style="color: #d6d6d6;"></i></a></li>
+                <li><a href="www.facebook.com"><i class="fa-brands fa-google fa-xl" style="color: #d6d6d6;" aria-label="facebook-link"></i></a></li>
+                <li><a href="www.instagram.com"><i class="fa-brands fa-instagram fa-xl" style="color: #d6d6d6;" aria-label="instagram-link"></i></a></li>
+                <li><a href="www.twitter.com" aria-label="twitter-link"><i class="fa-brands fa-facebook fa-xl" style="color: #d6d6d6;" aria-label="twitter-link"></i></a></li>
             </ul>
-        </footer>
+        </div>
     </nav>
     <main>
         <section class="front-img">
@@ -82,22 +95,20 @@
                     <span class="fitness-arrow"></span>
                 </div>
             </header>
-            <article class="fitness-article">
-                <section class="fitness-article-section">
-                    <div class="fitness-img"><img src="./images/fitness.jpg" width="100%" alt="fitness"></div>
-                    <div class="fitness-text">
+            <section class="fitness-article">
+                <div class="fitness-article-section">
+                    <div class="fitness-img"><img src="./images/fitness.jpg"  alt="fitness"></div>
+                    <article class="fitness-text">
                         <h4>Full body Excercises</h4>
-                        <h1>Sculpt and Strengthen Your Entire Body with full body Exercises</h1>
+                        <h2>Sculpt and Strengthen Your Entire Body with full body Exercises</h2>
                         <p>Resistance bands provide resistance throughout the entire range of motion of an exercise, which can help to build strength and muscle mass.</p>
-                    </div>
-                    <a href="#"><button type="button" class="fitness-class-button">
-                        READ FULL ARTICLE
-                    </button></a> 
-                </section>
-                <section class="fitness-article-section">
+                    </article>
+                        <a href="./pages/article.html" class="fitness-class-button">READ FULL ARTICLE</a>
+                </div>
+                <div class="fitness-article-section">
                     <div class="fitness-article-section-side">
                         <div>
-                            <img src="./images/chest_workout.jpg" width="100%" alt="fitness-article">
+                            <img src="./images/chest_workout.jpg" alt="fitness-article">
                         </div>
                         <div>
                             <h4>Chest</h4>
@@ -108,7 +119,7 @@
                     <div class="fitness-article-section-side">
                         
                         <div>
-                            <img src="./images/bicep_girl.jpg" width="100%" alt="fitness-article">
+                            <img src="./images/bicep_girl.jpg" alt="fitness-article">
                         </div>
                         <div>
                             <h4>Biceps</h4>
@@ -117,17 +128,17 @@
                     </div>
                     <div class="fitness-article-section-side" style="border-bottom:none;">
                         <div>
-                            <img src="./images/abs_workout.jpg" width="100%" alt="fitness-article">
+                            <img src="./images/abs_workout.jpg" alt="fitness-article">
                         </div>
                         <div>
                             <h4>Abdominal Workout</h4>
                             <p style="margin:0;">To achieve results with ab workouts, it's important to vary your exercises, gradually increase the number of reps and sets, and maintain proper form throughout each movement. </p>
                         </div>
                     </div>
-                    <button type="button" class="fitness-class-button-right">ALL WORKOUTS</button>
-                </section>
+                    <a href="./pages/article.html" class="fitness-class-button-right">ALL WORKOUTS</a>
+                </div>
                 
-            </article>
+            </section>
         </section>
         <section class="workout-section">
             <header class="fitness">
@@ -141,16 +152,16 @@
             <article class="workout-container">
                 <div class="workout-container-text">
                     <h4 style="padding: 1rem 0">Leg Excercises</h4>
-                    <h1>Here's why side squats can lead to greater legs</h1>
+                    <h2>Here's why side squats can lead to greater legs</h2>
                     <h3>
                         Squats are necessary legday evil, but this variation is both nasty and effective.
                     </h3>
-                    <button style="width:50%; margin:1.5rem 0" class="fitness-class-button">
+                    <a style="width:50%; margin:1.5rem 0" class="fitness-class-button" href="./pages/article.html">
                         Read Article
-                    </button>
+                    </a>
                 </div>
                 <div class="workout-container-img">
-                    <img src="./images/legs.jpg" width="100%" alt="lunges">
+                    <img src="./images/legs.jpg"  alt="lunges">
                 </div>
             </article>
         </section>
@@ -166,25 +177,25 @@
             <div class="yoga-card">
                 <article class="yoga-card-article">
                     <h1 >Meditation</h1>
-                    <div><img src="./images/yoga_workout.jpg" width="100%" alt="yoga-pose"></div>
+                    <div><img src="./images/yoga_workout.jpg" alt="yoga-pose"></div>
                     <h3>Skip the Gym for these Best Yoga Poses</h3>
                     <p>
                         Meditation is a practice that involves training the mind to achieve a state of relaxation, focus, and awareness. It has been practiced for centuries and has been shown to have numerous benefits for mental and physical health, including reducing stress, anxiety, and depression, improving concentration and memory, and enhancing feelings of well-being and happiness.
                     </p>
                     <div style="padding: 0 1rem; width: 100%;box-sizing: border-box;">
-                        <a href="#">View More</a>
+                        <a href="./pages/index.html">View More</a>
                     </div>
                 </article>
                 <article class="yoga-card-article">
                     <h1 >Stretch</h1>
-                    <div><img src="./images/yoga_workout2.jpg" width="100%" alt="yoga-pose"></div>
+                    <div><img src="./images/yoga_workout2.jpg"  alt="yoga-pose"></div>
                     <h3>Skip the Gym for these Best Yoga Poses</h3>
                     <p>
                         Yoga stretching helps to increase flexibility and range of motion, making it easier to perform daily activities and preventing injury.
                         The deep breathing and relaxation techniques used in yoga can help to reduce stress and anxiety, promoting feelings of calm and well-being.
                     </p>
                     <div style="padding: 0 1rem; width: 100%;box-sizing: border-box;">
-                        <a href="#">View More</a>
+                        <a href="./pages/index.html">View More</a>
                     </div>
                 </article>
             </div>
@@ -201,21 +212,21 @@
             <article class="card">
                 <div class="card-latest-collection">
                     <div class="card-latest">
-                        <div class="card-latest-image"><img width="100%" src="./images/egg_protein.jpg" alt="latest"></div>
+                        <div class="card-latest-image"><img src="./images/egg_protein.jpg" alt="latest"></div>
                         <div class="card-latest-text">
                             <h4>Egg Protein</h4>
                             <p>Egg protein is quickly absorbed and can be used by the body to repair and build muscle tissue. It also helps to stimulate the production of new muscle protein, leading to increased muscle growth and strength over time.<p>
                         </div>
                     </div>
                     <div class="card-latest">
-                        <div class="card-latest-image"><img width="100%" src="./images/omega3.jpg" alt="latest"></div>
+                        <div class="card-latest-image"><img src="./images/omega3.jpg" alt="latest"></div>
                         <div class="card-latest-text">
                             <h4>Omega 3</h4>
                             <p>Omega-3s have been shown to have numerous health benefits, including reducing inflammation, improving heart health, and supporting brain function. They have also been shown to be beneficial in reducing the risk of chronic diseases like cancer, arthritis, and diabetes.
                         </div>
                     </div>
                     <div class="card-latest" style="border-bottom: none;">
-                        <div class="card-latest-image"><img width="100%" src="./images/multivitamins.jpg" alt="latest"></div>
+                        <div class="card-latest-image"><img src="./images/multivitamins.jpg" alt="latest"></div>
                         <div class="card-latest-text">
                             <h4>Multi Vitamins</h4>
                             <p>
@@ -226,54 +237,61 @@
                 </div>
                 <div class="advertisement">
                     <p style="font-size: 16px; font-family: 'Barlow Condensed', sans-serif;text-align: center;">Advertisement</p>
-                    <img src="./images/rajat-chauhan-half.gif" width="100%" alt="advertisement">
+                    <img src="./images/rajat-chauhan-half.gif" alt="advertisement">
                 </div>
             </article>
         </section>
     </main>
     <footer id="mainFooter">
-        <section class="image-left">
-            <img src="./images/gym.svg" width="100%" alt="launch" style="box-sizing: border-box; padding:.5rem">
-        </section>
-        <section>
-            <form class="footer-form">
-                <input type="search" placeholder="Your Email" class="search_input">
-                <button type="button" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
-            </form>
-        </section>
+        <div class="image-left">
+            <img src="./images/gym.svg"  alt="launch" style="box-sizing: border-box; padding:.5rem">
+        </div>
+        <div>
+            <div class="footer-form">
+                <input type="search" placeholder="Your Email" class="search_input" name="email">
+                <button type="submit" class="subscribeBtn" style="border-radius: 0 0 0 0;">Subscribe Now</button>
+            </div>
+        </div>
         <section class="services">
-            <ul>
+            <div>
                 <h3>Menu</h3>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/article.html">Article</a></li>
-                <li><a href="./pages/source.html">Sources</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-            <ul>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/article.html">Article</a></li>
+                    <li><a href="./pages/source.html">Sources</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
                 <h3>About</h3>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Careers</a></li>
-                <!-- <li><a href="#">Sources</a></li>
-                <li><a href="#">Contact</a></li> -->
-            </ul>
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <!-- <li><a href="#">Sources</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            
+           <div>
+            <h3>Support</h3>
             <ul>
-                <h3>Support</h3>
                 <li><a href="#">Support Request</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+           </div>
         </section>
-        <section class="rights-reserved">
+        <div class="rights-reserved">
             <div style="display: flex; align-items: center;">
                 <p>All rights reserved 2023</p>
             </div>
             <div class="footer-icon">
                 <ul>
-                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-google fa-xl" alt="takes to facebook website" style="color: #000000;"></i></a></li>
-                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-xl" alt="redirects to instagram" style="color: #000000;"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fa-brands fa-facebook fa-xl" alt="redirects to twitter" style="color: #000000;"></i></a></li>
+                    <li><a href="https://www.facebook.com" aria-label="Go to facebook"><i class="fa-brands fa-google fa-xl" style="color: #000000;"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fa-brands fa-instagram fa-xl"  style="color: #000000;"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to "><i class="fa-brands fa-facebook fa-xl"  style="color: #000000;"></i></a></li>
                 </ul>
             </div>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
